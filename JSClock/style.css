@@ -1,0 +1,33 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.clock-face{
+    width: 200px;
+    height: 200px;
+    max-width: 50%;
+    border: 6px solid black;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hand{
+    width: 50%;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+
+.sec{
+    height: 3px;
+    background-color: red;
+}
